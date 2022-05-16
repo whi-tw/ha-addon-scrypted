@@ -18,6 +18,6 @@ def main(new_version: str):
         f.write(cl.to_string())
     
 if __name__ == "__main__":
-    new_version = sys.argv[1]
+    new_version = sys.argv[1].lstrip("v")
     main(new_version)
     
